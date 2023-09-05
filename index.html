@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bolaji Babalola - Portfolio</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js"></script>
+  <style>
+    /* Add your CSS styles here */
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div id="home">
+      <div class="profile_name">
+        Bolaji Babalola
+        <div class="contact_info">
+          Hellobjay247@gmail.com
+        </div>
+        <div class="contact_info">
+          +2349121437601
+        </div>
+      </div>
+      <div class="topdiv">
+        <a class="topmenu" href="#about-me">About Me</a>
+        <a class="topmenu" href="#skills">Skills</a>
+        <a class="topmenu" href="#projects">Projects</a>
+        <a class="topmenu" href="#recommendations">Recommendations</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Me -->
+  <section id="about-me" class="container">
+    <div>
+      <img src="C:\Users\HP\Desktop\final project front end development\IMG_20221028_231901_925.jpg" class="profile_image" alt="Bolaji Babalola's Profile Image">
+    </div>
+    <div>
+      <h1>
+        Hi, I'm Bolaji Babalola! <img src="C:\Users\HP\Desktop\final project front end development\wave.png" width="60px"alt="Wave Emoji"/>
+      </h1>
+      <p>
+        I am a BI developer with four (4) years of experience in both application and presentation layers.
+		Started my journey as a data analyst,hence, great with data insights & visualization 
+        I have worked on applications and microservices deployed on IBM Cloud.
+        I am an avid user of Power BI and cloud platforms and very good with the following tools: SQL, python,excel,power query and  have worked on major projects for banks like first bank,9PSB and ecobank.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>[Skills]</h2>
+    <div class="all_skills">
+      <div class="skill">
+        <img src="C:\Users\HP\Desktop\final project front end development\html logo.png" alt="HTML5 Logo">
+        <h6>[HTML]</h6>
+        <p>2 years experience</p>
+      </div>
+      <div class="skill">
+        <img src="C:\Users\HP\Desktop\final project front end development\png-javascript-badge-picture-8.png" alt="JavaScript Logo">
+        <h6>[JavaScript]</h6>
+        <p>3 years experience</p>
+      </div>
+      <div class="skill">
+        <img src="C:\Users\HP\Desktop\final project front end development\sql.jpg" alt="SQL Logo">
+        <h6>[SQL]</h6>
+        <p>4 years experience</p>
+      </div>
+      <div class="skill">
+        <img src="C:\Users\HP\Desktop\final project front end development\python.png" alt="python Logo">
+        <h6>python</h6>
+        <p>4 years experience</p>
+      </div>
+      <div class="skill">
+        <img src="C:\Users\HP\Desktop\final project front end development\css.png" alt="css Logo">
+        <h6>css</h6>
+        <p>4 years experience</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="[projects]">
+  <h1>[projects]</h1>
+  </div>
+      <hr>
+      <div class="project-card">
+        <h1>[Website with a Chat-bot]</h1>
+        <ul>
+          <li>-Developed a secure website integrated with a chatbot for an automobile client using HTML, CSS and JavaScript</li>
+        </ul>
+      </div>
+      <hr>
+      <div class="project-card">
+         <h1>[Sentiment Analysis]</h1>
+        <ul>
+          <li>-Developed and deployed a sentiment analyzer to gauge consumers opinion on a
+		  new product</li>
+        </ul>
+      </div>
+      <hr>
+      <div class="project-card">
+         <h1>[Historical data migration]</h1>
+        <ul>
+          <li> -Led a team of four (4) other developers in developing 42 scripts for automating reports for first bank </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recommendations -->
+  <section id="recommendations">
+    <h2>[Recommendations]</h2>
+    <div class="all_recommendations" id="all_recommendations">
+      <div class="recommendation">
+        <span>&#8220;</span>
+        -Bolaji's supervisor at 9PSB, I had the pleasure of working closely with him and witnessing his remarkable skills in data analysis.
+        -He consistently impressed us with his ability to transform raw data into actionable insights. Their proficiency in statistical analysis, programming languages. 
+                <span>&#8221;</span>
+      </div>
+      <div class="recommendation">
+        <span>&#8220;</span>
+        -Working with bolaji has been an awesome experience. 
+        -His very highly knowledgeable and always goes the extra mile to make sure everything is right. 
+        -For any future projects that need his expertise, I would definitely want to work with him again.
+        <span>&#8221;</span>
+      </div>
+      <div class="recommendation">
+        <span>&#8220;</span>
+        -Bolaji consistently showcased his analytical prowess in transforming complex data sets into actionable insights. 
+        -statistical techniques enabled them to identify trends, patterns, and opportunities that directly impacted our business strategies. 
+        <span>&#8221;</span>
+      </div>
+    
+            <!-- Leave a recommendation -->
+  <section id="contact">
+  <div class="flex_center">
+    <fieldset>
+      <legend class="introduction">Leave a Recommendation</legend>
+      <input type="text" placeholder="Name (Optional)">
+      <br>
+      <textarea id="new_recommendation" cols="50" rows="10" placeholder="Message"></textarea>
+      <div class="flex_center">
+        <button id="recommend_btn" onclick="addRecommendation();">Submit</button>
+      </div>
+    </fieldset>
+  </div>
+</section>
+
+<div class="iconbutton">
+  <a href="#home">
+    <!-- showPopup(true); -->
+  </a>
+</div>
+
+<div class="popup" id="popup" class="flex_center">
+  <img src="html_finalprojimages/checkmark--outline.svg" alt="Checkmark Icon">
+  <h1 id="popup_message"></h1>
+  <button onclick="closePopup()">Ok</button>
+</div>
